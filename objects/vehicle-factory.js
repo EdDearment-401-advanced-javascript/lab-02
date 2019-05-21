@@ -9,7 +9,7 @@ const Vehicle = () => ({
   }
 });
 
-function CarFactory() {
+function CarFactory(name) {
   let car = Object.assign(
     {wheels: 4},
     {name},
@@ -19,7 +19,7 @@ function CarFactory() {
   return Object.freeze(car);
 }
 
-function MotorcycleFactory() {
+function MotorcycleFactory(name) {
     let moto = Object.assign(
         {wheels: 2},
         {name},

@@ -25,5 +25,5 @@ const VehicleFactory = require('./vehicle-factory.js');
 const robin = new VehicleFactory.CarFactory('Relient Robin');
 console.log(robin.name, robin.drive(), robin.stop());
 
-const razor = new VehicleFactory.Motorcycle('Razor Scooter');
+const razor = new VehicleFactory.MotorcycleFactory('Razor Scooter');
 console.log(razor.name, razor.wheelie(), razor.stop());
