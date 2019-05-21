@@ -1,0 +1,27 @@
+{
+  "name": "lab-02",
+  "version": "1.0.0",
+  "description": "Lab-2",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "lint": "eslint **/*.js",
+    "test": "jest --verbose --coverage",
+    "test-watch": "jest --watchAll --verbose --coverage",
+    "jsdoc": "jsdoc -c ./docs/config/jsdoc.config.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourname-401-advanced-javascript/lab-02.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yourname-401-advanced-javascript/lab-02/issues"
+  },
+  "homepage": "https://github.com/yourname-401-advanced-javascript/lab-02#readme",
+  "dependencies": {
+    "jest": "^24.8.0",
+    "lint": "^1.1.2"
+  }
+}
