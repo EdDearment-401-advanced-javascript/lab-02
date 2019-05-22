@@ -20,4 +20,43 @@ describe('List Data Structure', () => {
     expect(stuff.data[1]).toEqual('b');
   });
 
+  it('pops items off the end of the data set', () => {
+    let stuff = new List();
+    stuff.push('a');
+    stuff.push('b');
+    stuff.pop();
+    expect(stuff.length).toEqual(1);
+    expect(stuff.data[0]).toEqual('a');
+  });
+
+  it('it removes the first element of the data set', () => { 
+    let stuff = new List();
+    stuff.push('a');
+    stuff.push('b');
+    stuff.shift();
+    expect(stuff.length).toEqual(1);
+    expect(stuff.data[0]).toEqual('b');
+  });
+
+  it('it adds an item to the front of the array', () => {
+    let stuff = new List();
+    stuff.push('a');
+    stuff.push('b');
+    stuff.unshift('c');
+    expect(stuff.length).toEqual(3);
+    expect(stuff.data[2]).toEqual('b');
+    expect(stuff.data[0]).toEqual('c');
+    expect(stuff.data[1]).toEqual('a');
+  });
+  it('it can go through the array', () => {
+    let stuff = new List();
+    stuff.push('a');
+    stuff.push('b');
+    stuff.push('c');
+    expect(stuff.length).toEqual(3);
+    expect(stuff.data[2]).toEqual('b');
+    expect(stuff.data[0]).toEqual('c');
+    expect(stuff.data[1]).toEqual('a');
+  });
+
 });
