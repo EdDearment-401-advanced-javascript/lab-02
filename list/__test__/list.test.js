@@ -54,9 +54,9 @@ describe('List Data Structure', () => {
     stuff.push('b');
     stuff.push('c');
     expect(stuff.length).toEqual(3);
-    expect(stuff.data[0]).toEqual('c');
+    expect(stuff.data[2]).toEqual('c');
     expect(stuff.data[1]).toEqual('b');
-    expect(stuff.data[2]).toEqual('a');
+    expect(stuff.data[0]).toEqual('a');
   });
 
 });
