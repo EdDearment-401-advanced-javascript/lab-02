@@ -31,7 +31,7 @@ List.prototype.shift = function() {
   this.length--;
   return returnValue;
 }
-List.prototype.unshift = function() {
+List.prototype.unshift = function(item) {
   let returnValue = this.data[this.length];
   this.length++;
   for(let i = (this.length - 1) ; i >= 0; i--){
@@ -41,9 +41,10 @@ List.prototype.unshift = function() {
   this.data[0] = item;
   return returnValue;
 }
-List.prototype.forEach = function() {
+List.prototype.forEach = function(callBack) {
   for(let i = 0; i < this.length; i++){
-    this.data[i];
+    //return this.data[i].callBack.toUpperCase(this.data[i]);
+    this.data[i] = callBack(this.data[i]);
   }
 }
 

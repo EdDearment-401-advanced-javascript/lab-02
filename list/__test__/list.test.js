@@ -1,8 +1,8 @@
 'use strict';
 
 // These 2 should be interchangeable!
-const List = require('../list.js');
-// const List = require('../list-constructor.js');
+//const List = require('../list.js');
+ const List = require('../list-constructor.js');
 
 describe('List Data Structure', () => {
 
@@ -45,18 +45,20 @@ describe('List Data Structure', () => {
     stuff.unshift('c');
     expect(stuff.length).toEqual(3);
     expect(stuff.data[2]).toEqual('b');
-    expect(stuff.data[0]).toEqual('c');
     expect(stuff.data[1]).toEqual('a');
+    expect(stuff.data[0]).toEqual('c');
   });
+
   it('it can go through the array', () => {
     let stuff = new List();
-    stuff.push('a');
-    stuff.push('b');
-    stuff.push('c');
+    stuff.push(1);
+    stuff.push(0);
+    stuff.push(2);
+    stuff.forEach(item => item + 2);
     expect(stuff.length).toEqual(3);
-    expect(stuff.data[2]).toEqual('c');
-    expect(stuff.data[1]).toEqual('b');
-    expect(stuff.data[0]).toEqual('a');
+    expect(stuff.data[2]).toEqual(4);
+    expect(stuff.data[1]).toEqual(2);
+    expect(stuff.data[0]).toEqual(3);
   });
 
 });
