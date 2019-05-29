@@ -41,9 +41,8 @@ List.prototype.unshift = function(item) {
   this.data[0] = item;
   return returnValue;
 };
-List.prototype.forEach = function(callBack) {
+List.prototype.forEAch = function(callBack) {
   for(let i = 0; i < this.length; i++){
-    //return this.data[i].callBack.toUpperCase(this.data[i]);
     this.data[i] = callBack(this.data[i]);
   }
 };

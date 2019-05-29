@@ -54,7 +54,7 @@ describe('List Data Structure', () => {
     stuff.push(1);
     stuff.push(0);
     stuff.push(2);
-    stuff.forEach(item => item + 2);
+    stuff.forEAch(item => item + 2);
     expect(stuff.length).toEqual(3);
     expect(stuff.data[2]).toEqual(4);
     expect(stuff.data[1]).toEqual(2);
