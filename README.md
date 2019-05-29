@@ -2,7 +2,7 @@
 
 ## Project Name Lab 2
 
-### Author: Student/Group Name Ed, Matt, Tia, Felepe
+### Author: Student/Group Name Edric, Matt, Tia, Felepe
 
 ### Links and Resources
 * [submission PR](https://github.com/yourname-401-advanced-javascript/lab-02/pull/1)
