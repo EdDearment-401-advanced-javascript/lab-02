@@ -14,17 +14,17 @@ class Vehicle {
 }
 
 class Car extends Vehicle {
-  constructor(name,wheels){
-    super(name,4)
+  constructor(name){
+    super(name,4);
   }
 }
 class Motorcycle extends Vehicle {
-    constructor(name, wheels){
-      super(name, 2)
-    }
-    wheelie() {
-        return 'Wheee!';
-    }
+  constructor(name){
+    super(name, 2);
+  }
+  wheelie() {
+    return 'Wheee!';
+  }
 }
 
 module.exports = {Car, Motorcycle};
