@@ -24,4 +24,28 @@ List.prototype.pop = function() {
   return returnValue;
 };
 
+List.prototype.shift = function() {
+  let returnValue = this.data[this.length];
+  delete this.data[0];
+  this.data[0] = this.data[1];
+  this.length--;
+  return returnValue;
+};
+List.prototype.unshift = function(item) {
+  let returnValue = this.data[this.length];
+  this.length++;
+  for(let i = (this.length - 1) ; i >= 0; i--){
+    this.data[i] = this.data[i - 1];
+  }
+  
+  this.data[0] = item;
+  return returnValue;
+};
+List.prototype.forEAch = function(callBack) {
+  for(let i = 0; i < this.length; i++){
+    this.data[i] = callBack(this.data[i]);
+  }
+};
+
+
 module.exports = List;
