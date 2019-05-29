@@ -26,7 +26,7 @@ function MotorcycleFactory(name) {
     {wheelie},
     Vehicle()
   );
-  function wheelie() {return 'Wheee!'}
+  function wheelie(); {return 'Wheee!'}
   return Object.freeze(moto);
 }
 
