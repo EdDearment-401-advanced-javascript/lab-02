@@ -48,7 +48,7 @@ class List {
     this.data[0] = item;
     return returnValue;
   }
-  forEach(callBack){
+  forEach(){
     for(let i = 0; i < this.length; i++){
       this.data[i];
     }
